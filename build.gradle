@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'ru.chuvahina'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClassName = "Main"
+}
+jar {
+    manifest {
+        attributes("Main-Class": "Main")
+    }
+}
